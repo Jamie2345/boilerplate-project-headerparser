@@ -1,23 +1,73 @@
+/****** Main Styling ******/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,500;1,200&family=Raleway:wght@400;700&display=swap');
+
 body {
 	font-family: 'Roboto', sans-serif;
 	font-size: 16px;
 	color: #222;
-	background-color: #FaFaFa;
 	text-align: center;
 	line-height: 1.4em;
+	margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+  background-color: #000;
+}
+
+.full-page-container {
+  display: flex;
+	flex-direction: column;
+	align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+  text-align: center;
+	color: #fff;
+	font-weight: 500;
+	font-family: 'Poppins', sans-serif;
 }
 
 .container {
 	padding: 0;
 	margin-top: 40px;
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+	justify-content: space-around;
+	align-items: center;
+	width: 65%;
+}
+
+.example-use-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+header {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 50px;
+	height: 100px;
+	width: 100%;
 }
 
 h3 {
   margin-top: 30px;
 }
 
-.footer {
-	margin-top: 40px;
+.examples-lst {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
 }
 
 code {
@@ -27,6 +77,43 @@ code {
   background-color: #fff;
 }
 
+#output-code {
+	display: none;
+}
+
+ul {
+	list-style-type: none;
+}
+
+li {
+  margin-bottom: 0.5em;
+}
+
 a {
 	color: #2574A9;
+}
+
+.try-container {
+	margin-top: 50px;
+}
+
+.output-box {
+	display: block;
+	padding: 20px;
+}
+
+.api_send_btn {
+	background: linear-gradient(to top, #0ba360 0%, #3cba92 100%);
+	width: 175px;
+	height: 45px;
+	border-radius: 5px;
+	border: none;
+	outline: none;
+	color: black;
+	font-family: "Poppins" Arial, Helvetica, sans-serif;
+	cursor: pointer;
+	font-weight: 600;
+	font-size: 14px; 
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+	transition: 0.4s ease;
 }
